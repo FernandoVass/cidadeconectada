@@ -4,13 +4,16 @@ O **Plano de Software** (PS) tem como propósito organizar e orientar o desenvol
 
 ## 📋 IDENTIFICAÇÃO DO PROJETO
 
-- **Nome do projeto:** Nome do projeto
+- **Nome do projeto: Cidade Conectada**
 - **Equipe:**
-  - Integrante (_Líder_)
-  - Integrante
-  - ...
+  - Fernando Vassoler (_Líder_)
+  - Gabriel Adolf
+  - Gustavo Benazzi
+  - Amanda Gehard
+  - Suziane Marques
+  - Murylo Teixeira
 
-* **Repositório Git:** [Link para o repositório](https://www.example.com/)
+* **Repositório Git:** https://github.com/gabreaw/cidadeconectada
 * **Data de início:** 04 de agosto de 2025
 * **Previsão de término:** 08 de dezembro de 2025
 * **Versão do PS:** v2025.08.18
@@ -23,9 +26,14 @@ O **Plano de Software** (PS) tem como propósito organizar e orientar o desenvol
 
 Descrever de forma detalhada qual é o contexto que fundamenta este projeto.
 
+Nosso projeto é uma plataforma chamada Cidade Conectada, cujo objetivo é facilitar a comunicação entre os cidadãos e os órgãos públicos, permitindo que os moradores relatem problemas encontrados na cidade, como ruas sem asfalto, buracos, falta de água, entre outros. Os usuários podem registrar suas reclamações através do aplicativo, visualizar as reclamações de outros moradores, comentar nelas e dar "UP" para aumentar sua visibilidade. Os órgãos públicos têm a responsabilidade de receber, avaliar, aprovar e acompanhar o status das reclamações, informando se foram resolvidas ou estão em andamento.
+
+
 ### Problema
 
 Descrever de forma detalhada qual é o problema que busca-se resolver através deste projeto.
+Entendemos a necessidade de melhorar nossa cidade e percebemos que a comunicação com a prefeitura ainda é pouco tecnológica. Queremos trazer essa facilidade para os cidadãos, permitindo que eles contribuam ativamente para a melhoria da cidade.
+
 
 ### Objetivos
 
@@ -195,3 +203,4 @@ Detalhar os recursos de hardware e/ou ambiente que serão utilizados para desenv
 Detalhar os recursos de software e/ou ferramentas que serão utilizados para desenvolvimento do projeto.
 
 ---
+
