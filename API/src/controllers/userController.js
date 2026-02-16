@@ -30,6 +30,9 @@ export const createUser = async (req, res) => {
         return res.status(201).json(user);
     } catch (error) {
         console.error("Erro ao criar usuário:", error);
+        console.log("--- ERRO DETALHADO ---");
+        console.error(error); 
+        console.log("----------------------");
 
         // Tratamento de erro para conflito de chave única
         if (error.code === 'P2002') {

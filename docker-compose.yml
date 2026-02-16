@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./API
+    container_name: backend-app
+    ports:
+      - "4444:4444"
+      - "5555:5555" # Studio Priskma)
+    environment:
+      # Trocamos 'localhost' por 'host.docker.internal' para o container alcançar o Windows
+      - DATABASE_URL=postgresql://postgres:admin@host.docker.internal:5432/cidadeconectada?schema=bancocidade
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./API/src:/usr/src/app/src  # Monta só a src (onde você edita)
+      - ./API/prisma:/usr/src/app/prisma
+      - ./API/package.json:/usr/src/app/package.json
+
+  frontend:
+    build: ./frontend
+    container_name: frontend-app
+    ports:
+      - "3001:3001" # Mapeia a porta que você quer acessar no navegador
+    volumes:
+      - ./frontend/src:/usr/src/app/src # Monta só a src
+      - ./frontend/public:/usr/src/app/public
+      - ./frontend/package.json:/usr/src/app/package.json
+      - ./frontend/index.html:/usr/src/app/index.html
+    depends_on:
+      - api
