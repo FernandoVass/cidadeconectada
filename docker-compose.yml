@@ -21,7 +21,7 @@ services:
     build: ./frontend
     container_name: frontend-app
     ports:
-      - "3001:3001" # Mapeia a porta que você quer acessar no navegador
+      - "5173:5173"
     volumes:
       - ./frontend/src:/usr/src/app/src # Monta só a src
       - ./frontend/public:/usr/src/app/public

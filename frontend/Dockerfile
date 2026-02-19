@@ -7,7 +7,7 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3001
+EXPOSE 5173
 
 # O --host 0.0.0.0 é essencial para o Docker expor a porta corretamente
-CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "3001"]
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "5173"]
